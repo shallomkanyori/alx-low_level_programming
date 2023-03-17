@@ -9,3 +9,4 @@
 - **Task 6: Numberz.** Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line, without using a variable of type char and using putchar only twice.
 - **Task 7: Smile in the mirror.** Write a program that prints the lowercase alphabet in reverse, followed by a new line, using only putchar twice.
 - **Task 8: Hexadecimal.** Write a program that prints all the numbers of base 16 in lowercase, followed by a new line, using only putchar thrice.
+- **Task 9: Patience, persistence and perspiration make an unbeatable combination for success.** Write a program that prints all possible combinations of single digit numbers in ascending order, separated by a comma and a space, followed by a new line, without using any variable of type char, using only putchar four times.

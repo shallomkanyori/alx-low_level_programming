@@ -7,3 +7,4 @@
 - **Task 4: When I was having that alphabet soup, I never thought that it would pay off.** Write a program that prints the alphabet in lowercase, except q and e, followed by a new line, using only putchar twice.
 - **Task 5: Numbers.** Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line.
 - **Task 6: Numberz.** Write a program that prints all single digit numbers of base 10 starting from 0, followed by a new line, without using a variable of type char and using putchar only twice.
+- **Task 7: Smile in the mirror.** Write a program that prints the lowercase alphabet in reverse, followed by a new line, using only putchar twice.

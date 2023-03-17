@@ -10,3 +10,5 @@
 - **Task 7: Smile in the mirror.** Write a program that prints the lowercase alphabet in reverse, followed by a new line, using only putchar twice.
 - **Task 8: Hexadecimal.** Write a program that prints all the numbers of base 16 in lowercase, followed by a new line, using only putchar thrice.
 - **Task 9: Patience, persistence and perspiration make an unbeatable combination for success.** Write a program that prints all possible combinations of single digit numbers in ascending order, separated by a comma and a space, followed by a new line, without using any variable of type char, using only putchar four times.
+
+- **Task 10: Inventing is a combination of brains and materials. The more brains you use, the less material you need.** Write a program that prints all possible different combinations of two digits in ascending order, separated by a comma and a space. Print only the smallest combination of two digits, using only putchar five times maximum. The two digits must be different.

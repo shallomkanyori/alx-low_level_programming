@@ -5,3 +5,4 @@
 - **Task 2: 10 x alphabet.** Write a funciton that prints 10 times the alphabet, in lowercase, followed by a new line.
 - **Task 3: islower.** Write a function that checks for lowercase character. Return 1 if lowercase, 0 otherwise.
 - **Task 4: isalpha.** Write a function that checks for alphabetic character. Return 1 if letter, 0 otherwise.
+- **Task 5: Sign.** Write a function that prints the sign of a number. Return 1 if positive, 0 if 0, and -1 if negative.

@@ -11,4 +11,6 @@ int _islower(int);
 
 int _isalpha(int);
 
+int print_sign(int);
+
 #endif

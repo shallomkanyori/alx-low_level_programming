@@ -29,4 +29,6 @@ void print_times_table(int);
 
 void print_number(int);
 
+void print_35_multiple_sum(void);
+
 #endif

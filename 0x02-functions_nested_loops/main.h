@@ -35,4 +35,8 @@ void print_50_fibonacci(void);
 
 void print_even_sum_fibonacci(void);
 
+void print_98_fibonacci(void);
+
+void print_98_fibonacci_overflow(unsigned long, unsigned long);
+
 #endif

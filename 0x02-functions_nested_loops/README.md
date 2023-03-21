@@ -6,3 +6,4 @@
 - **Task 3: islower.** Write a function that checks for lowercase character. Return 1 if lowercase, 0 otherwise.
 - **Task 4: isalpha.** Write a function that checks for alphabetic character. Return 1 if letter, 0 otherwise.
 - **Task 5: Sign.** Write a function that prints the sign of a number. Return 1 if positive, 0 if 0, and -1 if negative.
+- **Task 6: There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you.** Write a function that computes the absolute value of an integer.

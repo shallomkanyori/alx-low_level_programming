@@ -31,4 +31,6 @@ void print_number(int);
 
 void print_35_multiple_sum(void);
 
+void print_50_fibonacci(void);
+
 #endif

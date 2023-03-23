@@ -21,4 +21,6 @@ void print_diagonal(int);
 
 void print_square(int);
 
+void print_fizz_buzz(void);
+
 #endif

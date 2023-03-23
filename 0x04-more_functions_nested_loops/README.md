@@ -10,3 +10,4 @@
 - **Task 7: I feel like I am diagonally parked in a parallel universe.** Write a function that draws a diagonal line on the terminal by printing the character `\` n times, followed by a new line, only using `_putchar`. If `n` is `0` or less, print only a new line.
 - **Task 8: You are so much sunchine in every square inch.** Write a function that prints a square of size `size`, using the character `#`, followed by a new line.
 - **Task 9: Fizz-Buzz.** Write a program that prints the numbers from `1` to `100`, followed by a new line. Print `Fizz` instead of multiples of three and `Buzz` instead of multiples of five. Print `FizzBuzz` for multiples of both three and five.
+- **Task 10: Triangles.** Write a function that prints a triangle of a specified size, using the character `#`, followed by a new line, only using `_putchar`.

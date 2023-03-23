@@ -27,4 +27,6 @@ void print_triangle(int);
 
 void print_largest_prime_factor(long);
 
+void print_number(int);
+
 #endif

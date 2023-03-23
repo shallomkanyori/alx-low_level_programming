@@ -13,3 +13,4 @@
 - **Task 10: Triangles.** Write a function that prints a triangle of a specified size, using the character `#`, followed by a new line, only using `_putchar`.
 
 - **Task 11: The problem of distinguishing prime numbers from composite numbers and of resolving the latter into their prime factors is know to be one of the most important and useful in arithmetic.** Write a program that finds and prints the largest prime factor of the number `612852475143`, followed by a new line.
+- **Task 12: Numbers have life; they're not just symbols on paper.** Write a function that prints an integer using only the `_putchar` function to print, without using `long`, arrays or pointers, or hard-coded special values.

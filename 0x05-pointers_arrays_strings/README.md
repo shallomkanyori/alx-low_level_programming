@@ -12,3 +12,4 @@
 - **Task 9: strcpy.** Write a function that copies the string pointed to by `src`, including the terminating null byte (`\0`), to the buffer pointed to by `dest` and return the pointer to `dest`.
 
 - **Task 10: Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers.** Write a function that converts a string to an integer without using `long` or hard-coding special values. The number in the string can be preceded by an infinite number of characters. Take into account the `+` and `-` signs before the number.
+- **Task 11: Don't hate the hacker, hate the code.** Create a program that generates random valid passwords for the program 101-crackme.

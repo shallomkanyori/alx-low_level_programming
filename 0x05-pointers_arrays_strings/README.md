@@ -6,3 +6,4 @@
 - **Task 3: I do not fear computers. I fear the lack of them.** Write a function that prints a string, followed by a new line, to `stdout`.
 - **Task 4: I can only go one way. I've not got a reverse gear.** Write a function that prints a string, in reverse, followed by a new line.
 - **Task 5: A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes.** Write a function that reverses a string.
+- **Task 6: Half the lies the tell about me aren't true.** Write a function that prints every other character of a string, starting with the first character, followed by a new line.

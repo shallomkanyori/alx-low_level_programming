@@ -8,3 +8,4 @@
 - **Task 5: A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes.** Write a function that reverses a string.
 - **Task 6: Half the lies the tell about me aren't true.** Write a function that prints every other character of a string, starting with the first character, followed by a new line.
 - **Task 7: Winning is only half of it. Having fun is the other half.** Write a function that prints the second half of a string, followed by a new line. If the number of characters is odd, print the last `n` characters where `n = (length_of_the_string - 1) / 2`.
+- **Task 8: Arrays are not pointers.** Write a function that prints the first `n` elements of an array of integers, separated by a comma and a space, followed by a new line.

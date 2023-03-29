@@ -21,4 +21,6 @@ int is_separator(char c);
 
 char *leet(char *s);
 
+char *rot13(char *s);
+
 #endif

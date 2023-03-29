@@ -14,19 +14,24 @@ int _strcmp(char *s1, char *s2)
 
 	while (*s1 && *s2)
 	{
-		if (*s1 != *s2)
+		if (*s1 == *s2)
+		{
+			s1++;
+			s2++;
+		}
+		else
+		{
+			res = (*s1 < *s2) ? -15 : 15;
 			break;
-
-		s1++;
-		s2++;
+		}
 	}
 
-	if (*s1 == *s2)
-		res = 0;
-	else if (*s1 < *s2)
-		res = -15;
-	else
+	if (*s1 && !(*s2))
 		res = 15;
+	else if (!(*s1) && *s2)
+		res = -15;
+	else if (!(*s1) && !(*s2))
+		res = 0;
 
 	return (res);
 }

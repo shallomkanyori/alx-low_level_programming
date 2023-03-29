@@ -19,4 +19,6 @@ char *cap_string(char *str);
 
 int is_separator(char c);
 
+char *leet(char *s);
+
 #endif

@@ -11,3 +11,4 @@
 
 - **Task 8: rot13.** Write a function that encodes a string using rot13 using only one `if` statement and only two loops without using `switch` or any ternary operation.
 - **Task 9: Numbers have life; they're not just symbols on paper.** Write a function that prints an integer using only the \_putchar function to print, without using `long`, arrays or pointers, or hard-coded special values.
+- **Task 10: A dream doesn't become reality through magic; it takes sweat, determination and hard work.** Add one line to the given code so that the program prints `a[2] = 98`, followed by a new line. Add only one statement on line 19. You are not allowed to use the variable `a`, nor modify the variable `p`. You are not allowed to use `,`.

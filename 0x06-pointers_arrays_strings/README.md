@@ -10,3 +10,4 @@
 - **Task 7: Mozart composed his music not for the elite, but for everybody.** Write a function that encodes a string into 1337 using only one `if` statement and only two loops without using `switch` or any ternary operation.
 
 - **Task 8: rot13.** Write a function that encodes a string using rot13 using only one `if` statement and only two loops without using `switch` or any ternary operation.
+- **Task 9: Numbers have life; they're not just symbols on paper.** Write a function that prints an integer using only the \_putchar function to print, without using `long`, arrays or pointers, or hard-coded special values.

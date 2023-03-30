@@ -13,3 +13,8 @@
 - **Task 9: Numbers have life; they're not just symbols on paper.** Write a function that prints an integer using only the \_putchar function to print, without using `long`, arrays or pointers, or hard-coded special values.
 - **Task 10: A dream doesn't become reality through magic; it takes sweat, determination and hard work.** Add one line to the given code so that the program prints `a[2] = 98`, followed by a new line. Add only one statement on line 19. You are not allowed to use the variable `a`, nor modify the variable `p`. You are not allowed to use `,`.
 - **Task 11: It is the addition of strangeness to beauty that constitutes the romatic character in art.** Write a function that adds two numbers expressed as strings and returns a pointer to the result if it can be stored in the given buffer `r`, otherwise it returns `0`. Assume the strings will never be empty, will always contain only digits and will be numbers greater than or equal to `0`.
+- **Task 12: Noise is a buffer, more effective than cubicles or booth walls.** Write a function that prints a buffer 10 bytes per line. Each line should have the foollowing format:
+	- first byte of the line in hexadecimal (8 chars), starting with 0
+	- hexadecimal of content (2 chars), 2 bytes at a time, space separated
+	- contents, print character if byte is a printable character, otherwise, print `.`
+	- a new line;

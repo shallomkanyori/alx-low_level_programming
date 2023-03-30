@@ -31,4 +31,6 @@ int _strlen(char *s);
 
 void rev_string(char *s);
 
+void print_buffer(char *b, int size);
+
 #endif

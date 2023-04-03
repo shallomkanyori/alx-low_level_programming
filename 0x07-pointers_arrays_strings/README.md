@@ -7,3 +7,4 @@
 - **Task 4: strpbrk.** Write a function that searches a string for any of a set of bytes and returns a pointer to the byte that matches one of the accepted bytes or `NULL` if no such byte is found.
 - **Task 5: strstr.** Write a function that locates a substring and returns a pointer to the beginning of the located substring, or `NULL` if the substring is not found.
 - **Task 6: Chess is mental torture.** Write a function that prints the chessboard.
+- **Task 7: The line of life is a ragged diagonal between duty and desire.** Write a function that prints the sum of the two diagonals of a square matrix of integers where matrix is passed as `int*`.

@@ -8,3 +8,5 @@
 - **Task 5: strstr.** Write a function that locates a substring and returns a pointer to the beginning of the located substring, or `NULL` if the substring is not found.
 - **Task 6: Chess is mental torture.** Write a function that prints the chessboard.
 - **Task 7: The line of life is a ragged diagonal between duty and desire.** Write a function that prints the sum of the two diagonals of a square matrix of integers where matrix is passed as `int*`.
+
+- **Task 8: Double pointer, double fun.** Write a function that sets the value of a pointer to a char using a double pointer.

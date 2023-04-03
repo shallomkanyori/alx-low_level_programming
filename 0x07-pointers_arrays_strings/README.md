@@ -6,3 +6,4 @@
 - **Task 3: strspn.** Write a function that gets the length of a prefix substring. It should return the number of bytes in the initial segment of `s` which consists only of bytes from `accept`.
 - **Task 4: strpbrk.** Write a function that searches a string for any of a set of bytes and returns a pointer to the byte that matches one of the accepted bytes or `NULL` if no such byte is found.
 - **Task 5: strstr.** Write a function that locates a substring and returns a pointer to the beginning of the located substring, or `NULL` if the substring is not found.
+- **Task 6: Chess is mental torture.** Write a function that prints the chessboard.

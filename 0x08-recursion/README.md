@@ -9,3 +9,4 @@
 - **Task 6: Inception. Is it possible?** Write a recursive function that returns `1` if the input integer is a prime number, otherwise it returns `0`.
 
 - **Task 7: They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything.** Write a function that returns `1` if a string is a palindrome and `0` if not.
+- **Task 8: Inception. Now, before you bother telling me it's impossible...** Write a recursive function that compares two strings and returns `1` if the strings can be considered identical, otherwise it returns `0`. The second string can contain the special character `*` that can replace any string, including an empty string.

@@ -27,4 +27,8 @@ char *to_end(char *a);
 
 int is_palindrome_two(char *s, char *e);
 
+int wildcmp(char *s1, char *s2);
+
+char *remove_consec_wild(char *s);
+
 #endif

@@ -21,4 +21,10 @@ int is_prime_number(int n);
 
 int is_prime_number_odd(int n, int o);
 
+int is_palindrome(char *s);
+
+char *to_end(char *a);
+
+int is_palindrome_two(char *s, char *e);
+
 #endif

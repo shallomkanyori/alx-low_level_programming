@@ -7,3 +7,5 @@
 - **Task 4: Once an idea has taken hold of the brain it's almost impossible to eradicate.** Write a recursive function that returns the value of `x` raised to the power of `y` or `-1` if `y` is less than `0`.
 - **Task 5: Your subconscious is looking for the dreamer.** Write a recursive function that returns the natural square root of a number or `-1` if the number does not have a natural square root.
 - **Task 6: Inception. Is it possible?** Write a recursive function that returns `1` if the input integer is a prime number, otherwise it returns `0`.
+
+- **Task 7: They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything.** Write a function that returns `1` if a string is a palindrome and `0` if not.

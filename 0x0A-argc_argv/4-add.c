@@ -15,12 +15,13 @@ int main(int argc, char *argv[])
 	int res = 0;
 	int num;
 	int i;
+	char *endptr;
 
 	for (i = 1; i < argc; i++)
 	{
-		num = atoi(argv[i]);
+		num = (int)strtol(argv[i], &endptr, 10);
 
-		if (strcmp(argv[i], "0") != 0 && num <= 0)
+		if (*endptr != '\0' || num < 0)
 		{
 			puts("Error");
 			return (1);

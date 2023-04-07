@@ -29,9 +29,6 @@ int main(int argc, char *argv[])
 		res += num;
 	}
 
-	if (argc <= 2)
-		res = 0;
-
 	printf("%d\n", res);
 	return (0);
 }

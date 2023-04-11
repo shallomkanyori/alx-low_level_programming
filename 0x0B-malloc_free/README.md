@@ -7,3 +7,4 @@
 - **Task 4: It's not bragging if you can back it up.** Write a function that frees a 2D grid previously created by your `alloc_grid` function.
 
 - **Task 5: It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe.** Write a function that concatenates all the arguments of your program with a new line and returns a pointer to the new string or `NULL` if it fails. It should return `NULL` if no arguments are provided.
+- **Task 6: I will show you how great I am.** Write a function that splits a string into words and returns a pointer to an array of null-terminated strings (words) or `NULL` if it fails. It should return `NULL` if the given string is `NULL` or empty. Words are space separated. The last element of the returned array should be `NULL`.

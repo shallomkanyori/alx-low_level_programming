@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * num_words - returns the number of words in a string
@@ -37,7 +38,7 @@ int num_words(char *str)
  * @str: the string containing the word to be added, words are space separated
  * @s_ind: the index in str to start adding from
  *
- * Return: the index after the end of the word being added.
+ * Return: the index at the end of the word being added.
  * Returns -1 if malloc returns NULL.
  */
 int add_word(char **res, int res_ind, char *str, int s_ind)
@@ -57,7 +58,7 @@ int add_word(char **res, int res_ind, char *str, int s_ind)
 		res[res_ind][j] = str[s_ind + j];
 
 	res[res_ind][j] = '\0';
-	return (s_ind + word_len);
+	return (s_ind + word_len - 1);
 }
 
 /**

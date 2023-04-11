@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
 
 /**
  * num_words - returns the number of words in a string
@@ -80,7 +79,7 @@ char **strtow(char *str)
 
 	len = num_words(str);
 
-	res = malloc((sizeof(char *) * len) + 1);
+	res = malloc(sizeof(char *) * (len + 1));
 
 	if (res == NULL)
 		return (NULL);

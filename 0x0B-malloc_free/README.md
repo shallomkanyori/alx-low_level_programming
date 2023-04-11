@@ -5,3 +5,5 @@
 - **Task 2: He who is not courageous enough to take risks will accomplish nothing in life.** Write a function that concatenates two strings and returns a pointer to the newly allocated space in memory which contains the null terminated concatenation of the two strings or `NULL` on failure. If `NULL` is passed, treat it as an empty string.
 - **Task 3: If you even dream of beating me you'd better wake up and apologize.** Write a function that returns a pointer to a 2D integer array or `NULL` on failure. Each element of the grid should be initialized to `0`. If the given width or height is less than or equal to `0`, return `NULL`.
 - **Task 4: It's not bragging if you can back it up.** Write a function that frees a 2D grid previously created by your `alloc_grid` function.
+
+- **Task 5: It isn't the mountains ahead to climb that wear you out; it's the pebble in your shoe.** Write a function that concatenates all the arguments of your program with a new line and returns a pointer to the new string or `NULL` if it fails. It should return `NULL` if no arguments are provided.

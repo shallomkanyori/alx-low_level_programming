@@ -105,6 +105,9 @@ char **strtow(char *str)
 		ind++;
 	}
 
+	if (ind == 0)
+		return (NULL);
+
 	res[ind] = NULL;
 	return (res);
 }

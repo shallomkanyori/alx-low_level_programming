@@ -162,6 +162,7 @@ int main(int argc, char *argv[])
 
 	_print(res);
 	_print("\n");
+	free(res);
 
 	return (0);
 }

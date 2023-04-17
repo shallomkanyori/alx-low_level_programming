@@ -31,4 +31,6 @@ int _strlen(char *str);
 
 char *_strcpy(char *dest, char *src, int src_len);
 
+void free_dog(dog_t *d);
+
 #endif /* DOG_H */

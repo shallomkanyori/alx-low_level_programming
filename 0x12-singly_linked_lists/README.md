@@ -9,3 +9,6 @@
 - **Task 3: Add node at the end.** Write a function that adds a new node at the end of a `list_t` list and returns the address of the new element, or `NULL` if it failed.
 
 - **Task 4: Free list.** Write a function that frees a `list_t` list.
+
+
+- **Task 5: The Hare and the Tortoise.**Write a function that prints `You're beat! and yet, you must allow,\nI bore my house upon my back!\n` before the `main` function is executed.

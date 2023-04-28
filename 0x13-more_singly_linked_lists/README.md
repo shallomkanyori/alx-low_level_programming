@@ -15,3 +15,5 @@
 - **Task 6: Pop.** Write a function that deletes the head node of a `listint_t` linked list, and returns the head node's data. If the linked list is empty, return `0`.
 
 - **Task 7: Get node at index.** Write a function that returns the nth node of a `listint_t` linked list or `NULL` if the node does not exist
+
+- **Task 8: Sum list.** Write a function that returns the sum of all the data of a `listint_t` linked list. If the list is empty, return `0`.

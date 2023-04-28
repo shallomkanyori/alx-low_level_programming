@@ -21,3 +21,6 @@
 - **Task 9: Insert.** Write a function that inserts a new node at a given position and returns the address of the new node, or `NULL` if it failed. If it is not possible to add the new node at the given index, do not add the new node and return `NULL.`
 
 - **Task 10: Delete at index.** Write a function that deletes the node at a given index of a `listint_t` linked list and returns `1` if it succeeds and `-1` if it fails.
+
+
+- **Task 11: Reverse list.** Write a function that reverses a `listint_t` linked list and returns a pointer to the first node of the reversed linked list. You are not allowed to use more than one loop. You are not allowed to use `malloc`, `free` or arrays. You can declare a maximum of two variables in your function.

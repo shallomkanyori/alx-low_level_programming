@@ -26,3 +26,5 @@
 - **Task 11: Reverse list.** Write a function that reverses a `listint_t` linked list and returns a pointer to the first node of the reversed linked list. You are not allowed to use more than one loop. You are not allowed to use `malloc`, `free` or arrays. You can declare a maximum of two variables in your function.
 
 - **Task 12: Print (safe version).** Write a function that prints a `listint_t` linked list that may contain a loop and returns the number of nodes in the list. You should go through the list only once. If the function fails, exit the program with status `98`.
+
+- **Task 13: Free (safe version).** Write a function that frees a `listint_t` list that may contain a loop and returns the size of the list that was free'd. You can go through the list only once. The function should set the `head` to `NULL`.

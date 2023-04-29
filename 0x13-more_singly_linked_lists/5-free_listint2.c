@@ -10,7 +10,12 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *tmp;
-	listint_t *h = *head;
+	listint_t *h;
+
+	if (head == NULL)
+		return;
+
+	h = *head;
 
 	while (h != NULL)
 	{

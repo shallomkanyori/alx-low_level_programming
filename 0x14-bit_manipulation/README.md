@@ -9,3 +9,5 @@
 - **Task 3: 11.** Write a function that sets the value of a bit to `1` at a given index and returns `1` if it worked, or `-1` if an error occured.
 
 - **Task 4: 100.** Write a function that sets the value of a bit to `0` at a given index and returns `1` if it worked, or `-1` if an error occured.
+
+- **Task 5: 101.** Write a function that returns the number of bits you would need to flip to get from one number to another. You are not allowed to use the `%` or `/` operators.

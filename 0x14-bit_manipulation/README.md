@@ -5,3 +5,5 @@
 - **Task 1: 1.** Write a function that prints the binary representation of a number. You are not allowed to use arrays, `malloc` or the `%` or `/` operators.
 
 - **Task 2: 10.** Write a function that returns the value of a bit at a given index or `-1` if an error occured.
+
+- **Task 3: 11.** Write a function that sets the value of a bit to `1` at a given index and returns `1` if it worked, or `-1` if an error occured.

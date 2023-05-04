@@ -13,3 +13,5 @@
 - **Task 5: 101.** Write a function that returns the number of bits you would need to flip to get from one number to another. You are not allowed to use the `%` or `/` operators.
 
 - **Task 6: Endianness.** Write a function that checks the endianness and returns `0` if big endian or `1` if little endian.
+
+- **Task 7. Crackme3.** Find the password for `crackme3` and save it in the file `101-password`. Your file should contain the exact password, no new line, no extra space.

@@ -24,9 +24,6 @@ unsigned int binary_to_uint(const char *b)
 		i++;
 	}
 
-	if (i > 32)
-		return (0);
-
 	i--;
 	while (i >= 0)
 	{

@@ -11,7 +11,7 @@ void print_magic(unsigned char *e_ident)
 {
 	int i;
 
-	printf(" Magic: ");
+	printf("  Magic:   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
 	{
@@ -30,7 +30,7 @@ void print_magic(unsigned char *e_ident)
  */
 void print_class(unsigned char *e_ident)
 {
-	printf(" Class: ");
+	printf("%-37s", "  Class:");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -54,7 +54,7 @@ void print_class(unsigned char *e_ident)
  */
 void print_data(unsigned char *e_ident)
 {
-	printf(" Data: ");
+	printf("%-37s", "  Data:");
 
 	switch (e_ident[EI_DATA])
 	{
@@ -78,7 +78,7 @@ void print_data(unsigned char *e_ident)
  */
 void print_version(unsigned char *e_ident)
 {
-	printf(" Version: ");
+	printf("%-37s", "  Version:");
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -96,7 +96,7 @@ void print_version(unsigned char *e_ident)
  */
 void print_osabi(unsigned char *e_ident)
 {
-	printf(" OS/ABI: ");
+	printf("%-37s", "  OS/ABI:");
 
 	switch (e_ident[EI_OSABI])
 	{
@@ -141,7 +141,7 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi_version(unsigned char *e_ident)
 {
-	printf(" ABI Verion: %d\n", e_ident[EI_ABIVERSION]);
+	printf("%-37s%d\n", "  ABI Verion:", e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -151,7 +151,7 @@ void print_abi_version(unsigned char *e_ident)
  */
 void print_type(unsigned char *e_ident, unsigned int e_type)
 {
-	printf(" Type: ");
+	printf("%-37s", "  Type:");
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type >>= 8;
@@ -185,11 +185,12 @@ void print_type(unsigned char *e_ident, unsigned int e_type)
  */
 void print_entry(unsigned char *e_ident, unsigned long int e_entry)
 {
-	printf(" Entry point address: ");
+	printf("%-37s", "  Entry point address:");
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
-		e_entry = ((e_entry << 8) & 0xff00ff00) | ((e_entry >> 8) & 0xFF00FF);
+		e_entry = ((e_entry << 8) & 0xFF00FF00) |
+			  ((e_entry >> 8) & 0xFF00FF);
 		e_entry = (e_entry << 16) | (e_entry >> 16);
 	}
 
@@ -200,22 +201,38 @@ void print_entry(unsigned char *e_ident, unsigned long int e_entry)
 }
 
 /**
- * check_if_elf - checks if file is elf
+ * close_file - closes the file
+ * @fd: the file descriptor
+ */
+void close_file(int fd)
+{
+	if (close(fd) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Unable to close fd %d\n", fd);
+		exit(98);
+	}
+}
+
+/**
+ * check_if_elf - checks if file is an ELF file
  * @e_ident: the array of bytes on how to interpret the file
- * @file: the file
  * @fd: the file descriptor
  *
  * Return: nothing.
  */
-void check_if_elf(unsigned char *e_ident, const char *file, int fd)
+void check_if_elf(unsigned char *e_ident, int fd)
 {
-	if (e_ident[0] != ELFMAG0 || e_ident[1] != ELFMAG1 ||
-			e_ident[2] != ELFMAG2 || e_ident[3] != ELFMAG[3])
+	int i;
+
+	for (i = 0; i < 4; i++)
 	{
-		dprintf(STDERR_FILENO,
-			"Invalid ELF magic number in file %s\n", file);
-		close(fd);
-		exit(98);
+		if (e_ident[i] != 127 && e_ident[i] != 'E' &&
+				e_ident[i] != 'L' && e_ident[i] != 'F')
+		{
+			dprintf(STDERR_FILENO, "Error: Not an ELF file\n");
+			close_file(fd);
+			exit(98);
+		}
 	}
 }
 
@@ -238,11 +255,11 @@ void print_header(const char *file, int fd)
 		dprintf(STDERR_FILENO,
 			"Error: Unable to read ELF header from file %s\n",
 			file);
-		close(fd);
+		close_file(fd);
 		exit(98);
 	}
 
-	check_if_elf(hdr_ptr->e_ident, file, fd);
+	check_if_elf(hdr_ptr->e_ident, fd);
 
 	printf("ELF Header:\n");
 	print_magic(hdr_ptr->e_ident);
@@ -254,11 +271,7 @@ void print_header(const char *file, int fd)
 	print_type(hdr_ptr->e_ident, hdr_ptr->e_type);
 	print_entry(hdr_ptr->e_ident, hdr_ptr->e_entry);
 
-	if (close(fd) == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Unable to close fd %d\n", fd);
-		exit(98);
-	}
+	close_file(fd);
 }
 
 /**
@@ -283,7 +296,7 @@ int main(int argc, char *argv[])
 	fd = open(argv[1], O_RDONLY);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Unable to open file %s\n",
+		dprintf(STDERR_FILENO, "Error: Unable to read file %s\n",
 				argv[1]);
 		exit(98);
 	}

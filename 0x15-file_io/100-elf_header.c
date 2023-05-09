@@ -14,12 +14,7 @@ void print_magic(unsigned char *e_ident)
 	printf("  Magic:   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
-	{
-		if (i)
-			printf(" ");
-
-		printf("%02x", e_ident[i]);
-	}
+		printf("%02x ", e_ident[i]);
 
 	printf("\n");
 }
@@ -141,7 +136,7 @@ void print_osabi(unsigned char *e_ident)
  */
 void print_abi_version(unsigned char *e_ident)
 {
-	printf("%-37s%d\n", "  ABI Verion:", e_ident[EI_ABIVERSION]);
+	printf("%-37s%d\n", "  ABI Version:", e_ident[EI_ABIVERSION]);
 }
 
 /**

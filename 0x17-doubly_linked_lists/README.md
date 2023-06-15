@@ -47,8 +47,14 @@ Write a function that deletes the node at index `index` of a `dlistint_t` list.
 - where `index` is the index of the node that should be deleted. Index starts at `0`
 - Returns: `1` if it succeeded, `-1` if it failed
 
+
 **Task 9: Crackme4.**
 Find the password for [crackme4](https://github.com/alx-tools/0x17.c).
 - Save the password in the file `100-password`
 - Your file should contain the exact password, no new line, no extra space
 - Hint: The program prints “OK” when the password is correct
+
+**Task 10: Palindromes.**
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is `9009` = `91` × `99`. Find the largest palindrome made from the product of two 3-digit numbers.
+- Save the result in the file `102-result`
+- Your file should contain the exact result, no new line, no extra space

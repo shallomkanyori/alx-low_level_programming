@@ -5,12 +5,11 @@
  */
 int rand(void)
 {
-	static int numbers[] = {9, 8, 10, 24, 75, 9};
+	static int numbers[] = {8, 8, 7, 9, 23, 74};
 	static int ind;
 
 	int num = numbers[ind];
 
 	ind = (ind + 1) % 6;
-
 	return (num);
 }

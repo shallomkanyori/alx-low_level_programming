@@ -51,7 +51,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 int add_node(hash_table_t *ht, const char *key, const char *value,
 		unsigned long int index)
 {
-	hash_node_t *curr = ht->array[index];
+	hash_node_t *curr;
 	hash_node_t *new = calloc(1, sizeof(hash_node_t));
 
 	if (new == NULL)

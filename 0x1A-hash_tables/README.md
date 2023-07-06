@@ -36,3 +36,12 @@ Write a function that retrieves a value associated with a key.
 	- where `ht` is the hash table you want to look into
 	- and `key` is the key you are looking for
 - Returns the value associated with the element, or `NULL` if `key` couldn’t be found
+
+**Task 5: >>> print(ht).**
+Write a function that prints a hash table.
+- Prototype: `void hash_table_print(const hash_table_t *ht);`
+	- where `ht` is the hash table
+- You should print the key/value in the order that they appear in the array of hash table
+	- Order: array, list
+- Format: Like print Python dictionary
+- If `ht` is NULL, don’t print anything

@@ -25,7 +25,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(curr->key, key) == 0)
 		{
-			if (value != NULL)
+			if (value != NULL && strcmp(curr->value, value) == 0)
+			{
+				new_value = curr->value;
+			}
+			else if (value != NULL)
 			{
 				new_value = realloc(curr->value, sizeof(char) * (strlen(value) + 1));
 				if (new_value == NULL)

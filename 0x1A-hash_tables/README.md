@@ -45,3 +45,8 @@ Write a function that prints a hash table.
 	- Order: array, list
 - Format: Like print Python dictionary
 - If `ht` is NULL, don’t print anything
+
+**Task 6: >>> del ht.**
+Write a function that deletes a hash table.
+- Prototype: `void hash_table_delete(hash_table_t *ht);`
+	- where `ht` is the hash table

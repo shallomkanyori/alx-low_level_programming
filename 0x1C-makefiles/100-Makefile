@@ -9,9 +9,7 @@ NAME = school
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 
-school.o: m.h
-
-main.o: m.h
+%.o: m.h
 
 fclean: clean oclean
 

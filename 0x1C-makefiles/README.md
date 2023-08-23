@@ -67,3 +67,15 @@ Requirements:
 	- `CFLAGS`: compile flags: `-Wall -Werror -Wextra -pedantic`
 - The `all` rule recompiles only the updated source files
 - The `clean`, `oclean`, `fclean`, `re` rules never fail
+
+#### Task 5: Island perimeter
+**Technical interview preparation**
+[5-island_perimeter.py](5-island_perimeter.py) contains a function `def island_perimeter(grid):`, that returns the perimeter of the islan described in `grid`:
+- `grid` is a list of list of integers:
+	- 0 represents a water zone
+	- 1 represents a land zone
+	- One cell is a square with side length 1
+	- Grid cells are connected horizontally/vertically (not diagonally).
+	- Grid is rectangular, width and height don’t exceed 100
+- Grid is completely surrounded by water, and there is one island (or nothing).
+- The island doesn’t have “lakes” (water inside that isn’t connected to the water around the island).

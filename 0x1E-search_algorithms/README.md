@@ -30,3 +30,6 @@ What is the space complexity (worst case) of an iterative linear search algorith
 
 #### Task 4
 What is the time complexity (worst case) of a binary search in an array of size `n`?
+
+#### Task 5
+What is the space complexity (worst case) of a binary search in an array of size `n`?

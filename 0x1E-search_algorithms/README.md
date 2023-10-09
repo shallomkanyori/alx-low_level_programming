@@ -92,3 +92,15 @@ What is the time complexity (average case) of a jump search in an array of size 
 - Prints the value being compared every time a comparison is made to `value`
 - Uses binary search once a good range has been found:
 	- Prints the array being searched every time it changes
+
+#### Task 11
+[104-advanced_binary.c](104-advanced_binary.c) contains a function that searches for a value in a sorted array of integers using the Binary search algorithm and returns the index of the first occurrence of that value.
+- Prototype : `int advanced_binary(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- Assumes that `array` will be sorted in ascending order
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Prints the array being searched every time it changes
+- Uses recursion and only one loop that prints the array.

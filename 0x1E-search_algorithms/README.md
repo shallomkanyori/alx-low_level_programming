@@ -78,3 +78,17 @@ What is the time complexity (average case) of a jump search in an array of size 
 - If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
 - Uses : `size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))` to determine the probe position
 - Prints the value being compared every time a comparison is made to `value`
+
+#### Task 10
+[103-exponential.c](103-exponential.c) contains a function that searches for a value in a sorted array of integers using the Exponential search algorithm
+- Prototype : `int exponential_search(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- Assumes that `array` will be sorted in ascending order
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Uses powers of 2 as exponential ranges to search in the array
+- Prints the value being compared every time a comparison is made to `value`
+- Uses binary search once a good range has been found:
+	- Prints the array being searched every time it changes

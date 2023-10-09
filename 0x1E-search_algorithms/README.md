@@ -117,3 +117,14 @@ What is the time complexity (average case) of a jump search in an array of size 
 - Uses the square root of the size of the array as the jump step
 - Uses the `sqrt()` function included in `<math.h>`
 - Prints the value being compared every time a comparison is made to `value`
+
+#### Task 13
+[106-linear_skip.c](106-linear_skip.c) contains a function that searches for a value in a sorted skip list of integers.
+- Prototype : `skiplist_t *linear_skip(skiplist_t *list, int value);`
+	- Where `list` is a pointer to the head of the list to search in
+	- A node of the express lane is placed every index which is a multiple of the square root of the size of the list
+	- And `value` is the value to search for
+- Assumes that `list` will be sorted in ascending order
+- Returns a pointer to the first node where `value` is located
+- If `value` is not present in `list` or if `list` is `NULL`, returns `NULL`
+- Prints the value being compared every time a comparison is made to `value`

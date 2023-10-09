@@ -128,3 +128,6 @@ What is the time complexity (average case) of a jump search in an array of size 
 - Returns a pointer to the first node where `value` is located
 - If `value` is not present in `list` or if `list` is `NULL`, returns `NULL`
 - Prints the value being compared every time a comparison is made to `value`
+
+#### Task 14
+What is the time complexity (average case) of a jump search in a singly linked list of size `n`, using `step = sqrt(n)`?

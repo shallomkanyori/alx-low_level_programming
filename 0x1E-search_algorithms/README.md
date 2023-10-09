@@ -1,1 +1,23 @@
 ## C - Search algorithms
+
+#### Task 0
+[0-linear.c](0-linear.c) contains a function that searches for a value in an array of integers using the Linear search algorithm
+- Prototype : `int linear_search(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Prints the value being compared every time a comparison is made to `value`
+
+#### Task 1
+[1-binary.c](1-binary.c) contains a function that searches for a value in a sorted array of integers using the Binary search algorithm
+- Prototype : `int binary_search(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- Assumes that `array` will be sorted in ascending order
+- Assumes that `value` won’t appear more than once in `array`
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Prints the array being searched every time it changes

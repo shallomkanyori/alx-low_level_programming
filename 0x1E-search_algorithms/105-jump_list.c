@@ -3,33 +3,33 @@
 
 /**
  * jump_list_ls - performs the linear search in Jump searching a linked list.
- * @a_node: a pointer to the start node
- * @b_node: a pointer to the end node
+ * @a: a pointer to the start node
+ * @b: a pointer to the end node
  * @value: the value to search for
  *
  * Return: a pointer to the first node where @value is located. If value is not
  * present or if list is NULL, returns NULL.
  */
-listint_t *jump_list_ls(listint_t *a_node, listint_t *b_node, int value)
+listint_t *jump_list_ls(listint_t *a, listint_t *b, int value)
 {
+	if (!a || !b)
+		return (NULL);
+
 	printf("Value found between indexes [%ld] and [%ld]\n",
-			a_node->index, b_node->index);
-	while (a_node->n < value)
+			a->index, b->index);
+
+	while (a)
 	{
-		printf("Value checked array[%ld] = [%d]\n", a_node->index, a_node->n);
+		printf("Value checked array[%ld] = [%d]\n", a->index, a->n);
 
-		if (a_node == b_node)
+		if (a->n == value)
+			return (a);
+
+		if (a == b)
 			return (NULL);
 
-		a_node = a_node->next;
-
-		if (!a_node)
-			return (NULL);
+		a = a->next;
 	}
-
-	printf("Value checked array[%ld] = [%d]\n", a_node->index, a_node->n);
-	if (a_node->n == value)
-		return (a_node);
 
 	return (NULL);
 }
@@ -45,35 +45,31 @@ listint_t *jump_list_ls(listint_t *a_node, listint_t *b_node, int value)
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	listint_t *a_node = NULL, *b_node = NULL;
-	size_t step, b;
+	listint_t *a = NULL, *b = NULL;
+	size_t step, b_ind;
 
 	if (!list)
 		return (NULL);
 
 	step = (size_t)sqrt(size);
-	a_node = list;
-	b_node = list;
+	a = list;
+	b = list;
 
-	while (b_node->next && b_node->index < step)
-		b_node = b_node->next;
+	while (b && b->index < step)
+		b = b->next;
 
-	b = 2;
-	while (1)
+	b_ind = 2;
+	while (b)
 	{
-		printf("Value checked array[%ld] = [%d]\n", b_node->index, b_node->n);
+		printf("Value checked array[%ld] = [%d]\n", b->index, b->n);
 
-		if (b_node->n < value)
+		if (b->n < value)
 		{
-			a_node = b_node->next ? b_node : a_node;
+			a = b;
+			while (b && b->index < (b_ind * step))
+				b = b->next;
 
-			if (b_node->next == NULL)
-				break;
-
-			while (b_node->next && b_node->index < (b * step))
-				b_node = b_node->next;
-
-			b++;
+			b_ind++;
 		}
 		else
 		{
@@ -81,5 +77,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		}
 	}
 
-	return (jump_list_ls(a_node, b_node, value));
+	if (!b)
+	{
+		b = a;
+		while (b->next)
+			b = b->next;
+	}
+
+	return (jump_list_ls(a, b, value));
 }

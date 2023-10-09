@@ -49,3 +49,16 @@ int **allocate_map(int n, int m)
      return (map);
 }
 ```
+
+#### Task 7
+[100-jump.c](100-jump.c) contains a function that searches for a value in a sorted array of integers using the Jump search algorithm
+- Prototype : `int jump_search(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- Assumes that `array` will be sorted in ascending order
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Uses the square root of the size of the array as the jump step
+- Uses the `sqrt()` function included int `<math.h>`
+- Prints the value being compared every time a comparison is made to `value`

@@ -60,7 +60,7 @@ int **allocate_map(int n, int m)
 - Assumes that `array` will be sorted in ascending order
 - If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
 - Uses the square root of the size of the array as the jump step
-- Uses the `sqrt()` function included int `<math.h>`
+- Uses the `sqrt()` function included in `<math.h>`
 - Prints the value being compared every time a comparison is made to `value`
 
 
@@ -104,3 +104,16 @@ What is the time complexity (average case) of a jump search in an array of size 
 - If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
 - Prints the array being searched every time it changes
 - Uses recursion and only one loop that prints the array.
+
+#### Task 12
+[105-jump_list.c](105-jump_list.c) contains a function that searches for a value in a sorted list of integers using the Jump search algorithm
+- Prototype : `listint_t *jump_list(listint_t *list, size_t size, int value);`
+	- Where `list` is a pointer to the head of the list to search in
+	- `size` is the number of nodes in `list`
+	- And `value` is the value to search for
+- Returns a pointer to the first node where `value` is located
+- Assumes that `list` will be sorted in ascending order
+- If `value` is not present in `list` or if `list` is `NULL`, returns `NULL`
+- Uses the square root of the size of the array as the jump step
+- Uses the `sqrt()` function included in `<math.h>`
+- Prints the value being compared every time a comparison is made to `value`

@@ -63,5 +63,18 @@ int **allocate_map(int n, int m)
 - Uses the `sqrt()` function included int `<math.h>`
 - Prints the value being compared every time a comparison is made to `value`
 
+
 #### Task 8
 What is the time complexity (average case) of a jump search in an array of size `n`, using `step = sqrt(n)`?
+
+#### Task 9
+[102-interpolation.c](102-interpolation.c) contains a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
+- Prototype : `int interpolation_search(int *array, size_t size, int value);`
+	- Where `array` is a pointer to the first element of the array to search in
+	- `size` is the number of elements in array
+	- And `value` is the value to search for
+- Returns the first index where `value` is located
+- Assumes that `array` will be sorted in ascending order
+- If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
+- Uses : `size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))` to determine the probe position
+- Prints the value being compared every time a comparison is made to `value`

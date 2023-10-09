@@ -21,3 +21,6 @@
 - Assumes that `value` won’t appear more than once in `array`
 - If `value` is not present in `array` or if `array` is `NULL`, returns `-1`
 - Prints the array being searched every time it changes
+
+#### Task 2
+What is the time complexity (worst case) of a linear search in an array of size `n`?

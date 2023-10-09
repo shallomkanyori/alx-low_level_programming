@@ -62,3 +62,6 @@ int **allocate_map(int n, int m)
 - Uses the square root of the size of the array as the jump step
 - Uses the `sqrt()` function included int `<math.h>`
 - Prints the value being compared every time a comparison is made to `value`
+
+#### Task 8
+What is the time complexity (average case) of a jump search in an array of size `n`, using `step = sqrt(n)`?

@@ -48,7 +48,7 @@ int bs_rec(int *array, size_t start, size_t end, int value)
 		return (bs_rec(array, start, mid - 1, value));
 	else if (array[mid] < value)
 		return (bs_rec(array, mid + 1, end, value));
-	else if (mid > 0 && array[mid - 1] == value)
+	else if (end > (start + 1))
 		return (bs_rec(array, start, mid, value));
 	else
 		return (mid);

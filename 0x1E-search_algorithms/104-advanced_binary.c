@@ -44,14 +44,12 @@ int bs_rec(int *array, size_t start, size_t end, int value)
 	b_print_array(array, start, end + 1);
 
 	mid = (start + end) / 2;
-	if (array[mid] > value)
-		return (bs_rec(array, start, mid - 1, value));
+	if (array[mid] == value && (mid == 0 || array[mid - 1] < value))
+		return (mid);
 	else if (array[mid] < value)
 		return (bs_rec(array, mid + 1, end, value));
-	else if (mid > 0 && array[mid - 1] == value)
-		return (bs_rec(array, start, mid, value));
 	else
-		return (mid);
+		return (bs_rec(array, start, mid, value));
 
 	return (-1);
 }

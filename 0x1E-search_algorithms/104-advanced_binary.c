@@ -40,7 +40,7 @@ int bs_rec(int *array, size_t start, size_t end, int value)
 	if (start > end)
 		return (-1);
 
-	printf("Searching in array:");
+	printf("Searching in array: ");
 	b_print_array(array, start, end + 1);
 
 	mid = (start + end) / 2;

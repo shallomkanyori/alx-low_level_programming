@@ -20,7 +20,7 @@ listint_t *jump_list_ls(listint_t *a, listint_t *b, int value)
 
 	while (a)
 	{
-		printf("Value checked array[%ld] = [%d]\n", a->index, a->n);
+		printf("Value checked at index [%ld] = [%d]\n", a->index, a->n);
 
 		if (a->n == value)
 			return (a);
@@ -61,7 +61,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	b_ind = 2;
 	while (b)
 	{
-		printf("Value checked array[%ld] = [%d]\n", b->index, b->n);
+		printf("Value checked at index [%ld] = [%d]\n", b->index, b->n);
 
 		if (b->n < value)
 		{
@@ -72,9 +72,7 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 			b_ind++;
 		}
 		else
-		{
 			break;
-		}
 	}
 
 	if (!b)
@@ -82,6 +80,8 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 		b = a;
 		while (b->next)
 			b = b->next;
+
+		printf("Value checked at index [%ld] = [%d]\n", b->index, b->n);
 	}
 
 	return (jump_list_ls(a, b, value));
